@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
+
         android:id="@+id/cos_of_service"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -16,9 +17,38 @@
         app:layout_constrainTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
     <TextView
-        android:layout_width=""
-        android:layout_height=""
+        android:id="@+id/service_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="como foi o serviço"
+        app:layout_constraintStar_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cos_of_service"/>
+   <RadioGroup
+       android:id="@+id/tip_options"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/service_question">
+       <RadioButton
+           android:id="@+id/option_twenty_percent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Amazing (20%)" />
 
+       <RadioButton
+           android:id="@+id/option_eighteen_percent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Good (18%)" />
+       <RadioButton
+           android:id="@+id/option_fifteen_percent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Good (15%)" />
+
+
+       </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
